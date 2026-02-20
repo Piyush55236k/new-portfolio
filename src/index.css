@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -13,7 +14,8 @@ html, body {
 /* ================= GLOBAL SECTION SPACING ================= */
 section {
   width: 100%;
-  padding: 6rem 0;   /* consistent vertical rhythm */
+  padding: 6rem 0;
+  /* consistent vertical rhythm */
 }
 
 /* ================= HERO ================= */
@@ -23,6 +25,7 @@ section {
   position: relative;
   overflow: hidden;
 }
+
 .container {
   width: 100%;
   margin: 0 auto;
@@ -30,6 +33,7 @@ section {
   height: 100%;
   position: absolute;
 }
+
 /* LEFT */
 .left {
   width: 50%;
@@ -39,6 +43,7 @@ section {
   align-items: center;
   justify-content: center;
 }
+
 .intro {
   width: 70%;
 }
@@ -92,7 +97,7 @@ section {
 /* NAV */
 nav {
   display: flex;
-  width: 80%;
+  width: 90%;
   align-items: center;
   justify-content: space-between;
   position: fixed;
@@ -104,23 +109,46 @@ nav {
 
 .secondnav {
   display: flex;
-  gap: 3dvw;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  padding: 1vh 2vh;
+  border-radius: 50px;
+  transition: all ease 0.4s;
+  overflow: hidden;
+  position: relative;
   color: white;
+  text-decoration: none;
 }
 
-nav h3 {
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 10px;
-  cursor: pointer;
+.nav-item::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -100%;
+  border-radius: 50%;
+  transition: all ease 0.4s;
 }
 
-nav h3:hover {
-  background: white;
+.nav-item:hover::after {
+  bottom: 0;
+  z-index: -1;
+  border-radius: 0;
   color: black;
-  border-radius: 0 40%;
 }
 
+.nav-item:hover {
+  color: rgb(0, 0, 0);
+}
+
+
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
 /* INTRO */
 
 /* HERO BOTTOM */
@@ -197,11 +225,13 @@ nav h3:hover {
   padding: 1.5rem;
   text-align: center;
 }
-.cards p{
+
+.cards p {
   line-height: 1.5;
   font-size: 1.02rem;
   font-weight: 500;
 }
+
 /* ================= SKILLS ================= */
 .page3 {
   background: #d7d7d7;
@@ -293,6 +323,7 @@ nav h3:hover {
 .demo img:hover {
   transform: scale(1.03);
 }
+
 /* .project-card img {
   width: 100%;
   height: 350px;
@@ -362,11 +393,13 @@ nav h3:hover {
   color: black;
   font-weight: 600;
 }
-.overlay h3{
+
+.overlay h3 {
   color: white;
   font-size: 1.2rem;
   font-weight: 700;
 }
+
 /* ================= CONTACT ================= */
 .contact-section {
   background: #d7d7d7;
@@ -380,7 +413,8 @@ nav h3:hover {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin: 5rem 0; /* subtle top & bottom spacing */
+  margin: 5rem 0;
+  /* subtle top & bottom spacing */
 }
 
 /* Left and Right Lines */
@@ -399,6 +433,7 @@ nav h3:hover {
   height: 22px;
   font-weight: 900;
 }
+
 .diamond {
   display: flex;
   justify-content: center;
@@ -443,6 +478,7 @@ nav h3:hover {
   background: transparent;
   padding: 0.8rem 0;
 }
+
 .submit-btn {
   background: none;
   border: none;
@@ -469,12 +505,14 @@ nav h3:hover {
   background: #000;
   display: block;
 }
+
 .form-status {
   margin-top: 1rem;
   text-align: center;
   font-size: 0.9rem;
   font-weight: 600;
 }
+
 /* ================= FOOTER ================= */
 .footer {
   background: #111;
@@ -500,7 +538,8 @@ nav h3:hover {
   align-items: center;
   justify-content: center;
 }
-.back-to-top{
+
+.back-to-top {
   color: white;
   text-decoration: none;
   display: flex;
@@ -508,6 +547,7 @@ nav h3:hover {
   justify-content: center;
   gap: 0.9rem;
 }
+
 .arrow-up {
   width: 10px;
   height: 10px;
@@ -517,7 +557,7 @@ nav h3:hover {
 }
 
 /* ================= MOBILE RESPONSIVE ================= */
-@media (max-width: 768px) {
+@media (max-width: 1260px) {
 
   /* GLOBAL SECTION SPACING */
   section {
@@ -526,7 +566,7 @@ nav h3:hover {
 
   /* ================= HERO ================= */
 
- /* HERO SECTION */
+  /* HERO SECTION */
   .page1 {
     height: 100vh;
     display: flex;
@@ -569,7 +609,8 @@ nav h3:hover {
   }
 
   /* Page1 bottom should appear after scroll */
-  .page1bottom {/* important */
+  .page1bottom {
+    /* important */
     min-height: 25vh;
     padding: 2rem 1rem;
   }
@@ -622,7 +663,8 @@ nav h3:hover {
   }
 
   .demo {
-    grid-template-columns: 1fr; /* 1 per row on mobile */
+    grid-template-columns: 1fr;
+    /* 1 per row on mobile */
     padding: 2rem 1.5rem;
     gap: 1.5rem;
   }
@@ -630,6 +672,7 @@ nav h3:hover {
   .demo img {
     height: 250px;
   }
+
   .overlay {
     position: relative;
     opacity: 1;
@@ -637,11 +680,13 @@ nav h3:hover {
     flex-direction: column;
     padding: 1rem 0;
   }
-.overlay h3{
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
+
+  .overlay h3 {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
   .image-wrapper {
     display: flex;
     flex-direction: column;
@@ -653,6 +698,7 @@ nav h3:hover {
     width: 100%;
     text-align: center;
   }
+
   /* ================= CONTACT ================= */
 
   .contact-form {

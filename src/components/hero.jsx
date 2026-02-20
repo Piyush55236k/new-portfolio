@@ -1,4 +1,5 @@
-import React, { useRef } from 'react'
+import React, { useRef } from 'react';
+import { Link } from 'react-router-dom';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -50,10 +51,10 @@ gsap.from(".right img", {
         <nav className="firstnav">
           <h2>Piyush</h2>
           <div className="secondnav">
-            <h3>About Me</h3>
-            <h3>Skills</h3>
-            <h3>Portfolio</h3>
-            <h3>CONTACT ME</h3>
+          <Link to="/about" className='nav-item'>About Me</Link>
+           <Link to="/skills" className='nav-item'>Skills</Link>
+           <Link to="/projects" className='nav-item'>Projects</Link>
+           <Link to="/contact" className='nav-item'>Contact Me</Link>
           </div>
         </nav>
         <div className="container">
