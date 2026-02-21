@@ -89,9 +89,9 @@ section {
 }
 
 .right img {
-  height: 250%;
+  height: 150%;
   position: absolute;
-  top: -20%;
+  top: -1%;
 }
 
 /* NAV */

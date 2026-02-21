@@ -65,9 +65,9 @@ gsap.from(".right img", {
               <p className="role">Front-end Developer / UI Designer</p>
 
               <div className="social">
-                <img src="socialicons/icons8-linkedin.svg" alt="LinkedIn" />
-                <img src="socialicons/icons8-github.svg" alt="Github" />
-                <img src="socialicons/icons8-threads.svg" alt="Threads" />
+               <a href="https://www.linkedin.com/in/piyush-pandey-a30014255"><img src="socialicons/icons8-linkedin.svg" alt="LinkedIn" /></a>
+                <a href="https://github.com/Piyush55236k"><img src="socialicons/icons8-github.svg" alt="Github" /></a>
+                <a href="https://www.instagram.com/im_piyush009"><img src="socialicons/instagram.svg" alt="Instagram" /></a>
               </div>
             </div>
           </div>

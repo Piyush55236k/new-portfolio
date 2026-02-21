@@ -66,7 +66,7 @@ const Contact = () => {
 
         <div className="divider">
           <span></span>
-          <span className="diamond"></span>
+          <span className="diamond">w</span>
           <span></span>
         </div>
       </div>

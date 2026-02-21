@@ -4,7 +4,7 @@ export const projects = [
     title: "Taskizo Freelance Platform",
     image: "projects/Taskizo.webp",
     demo: "https://taskizo-website.vercel.app",
-    github: "https://github.com/Piyush55236k/taskizo",
+    github: "https://github.com/Piyush55236k/Taskizo-website",
     tech: ["React", "Node.js", "MongoDB", "Express"],
     description: "A MERN-based freelance marketplace with real-time bidding and authentication."
   },
