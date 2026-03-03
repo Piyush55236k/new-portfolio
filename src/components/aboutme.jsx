@@ -36,16 +36,16 @@ gsap.from(".page2", {
         <div className="aboutme">
           <h1>ABOUT ME</h1>
           <p>
-            I’m Piyush Pandey,  BCA student at the Institute of Information Technology and Management, focused on building modern, scalable web applications. I specialize in front-end development using React and JavaScript, with hands-on experience in the MERN stack for full-stack projects.
-          </p>
+  I’m Piyush Pandey, a Full-Stack Developer and BCA student at the Institute of Information Technology and Management, focused on building scalable, production-ready web applications. I work primarily with the MERN stack, developing end-to-end solutions — from designing responsive front-end interfaces in React to building secure, efficient backend APIs and database architectures.
+</p>
 
-          <p>
-            Through a 3-month professional internship and participation in multiple hackathons — including winning an internal competition — I’ve strengthened my ability to build reliable solutions under deadlines. I focus on clean architecture, performance optimization, and creating intuitive user experiences that solve real problems.
-          </p>
+<p>
+  During a 3-month professional internship and multiple hackathons — including winning an internal competition — I’ve delivered functional products under tight deadlines. I prioritize clean architecture, performance optimization, and writing maintainable code that scales beyond just a demo project.
+</p>
 
-          <p>
-            I am actively seeking internship and entry-level opportunities where I can contribute to real-world products, collaborate with experienced teams, and continue improving through practical challenges.
-          </p>
+<p>
+  I’m currently looking for internship and entry-level full-stack roles where I can contribute to real-world products, take ownership of features, and grow within a team that values strong engineering fundamentals.
+</p>
 
           <div className="divider">
             <span></span>
