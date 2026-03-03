@@ -20,11 +20,13 @@ gsap.from(".image-card", {
 });
   } )
   return (
-    <section className="page3">
+   <section className="page3">
       <h1 className="Skills">SKILLS</h1>
-      <SkillsImages heading="Using Now" items={skillsData.usingNow} className="usingnow"/>
-      <SkillsImages heading="Learning" items={skillsData.learning} className="learning"/>
-      <SkillsImages heading="Other Skills" items={skillsData.other} className="other"/>
+      <SkillsImages heading="frontend" items={skillsData.frontend} className="usingnow" />
+      <SkillsImages heading="backend" items={skillsData.backend} className="learning" />
+      <SkillsImages heading="database" items={skillsData.database} className="other" />
+      <SkillsImages heading="programming languages" items={skillsData.programmingLanguages} className="other" />
+      <SkillsImages heading="tools" items={skillsData.tools} className="other" />
     </section>
   )
 }
